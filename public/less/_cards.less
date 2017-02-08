@@ -1,0 +1,240 @@
+
+.card-table {
+    width: 100%;
+    background-color: @flat-green;
+    background-image: url("../images/table-bg.png");
+}
+
+.card-table h3, .card-table h6 {
+    text-align: center;
+    padding: 0px;
+}
+
+.card-table h3 {
+    color: #f1c40f;
+}
+
+.card-table h6 {
+    color: #D5D5D5;
+}
+
+.card-holder {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    padding: 20px;
+}
+
+.table-rules {
+    padding: 50px 0px 30px 0px;
+}
+
+.hand-result {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 15px 0px 1px 0px;
+    background-color: #1D7940;
+}
+
+.hand-result h4 {
+    color: #FFFFFF;
+}
+
+.table-action-bar {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    font-size: 1.4em;
+    
+    background: #f3e2c7;
+    background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 20%, #b68d4c 80%, #c19e67 85%, #f3e2c7 100%); 
+}
+
+.action-divider {
+    float: left;
+    width: 33.3%;
+}
+
+.action-spacer {
+    padding: 8px 0px 0px 0px;
+}
+
+.card {
+    display: inline-block;
+    width: 140px;
+    height: 190px;
+    
+    zoom :0.6;
+    /*transform: scale(0.6);*/
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+    
+    background: url("../images/playingCards.png");
+}
+
+.c0 {
+    animation-name: dealcard-first;
+    animation-duration: 1s;
+}
+
+.c1 {
+    animation-name: dealcard-second;
+    animation-duration: 1.5s;
+}
+
+.d0 {
+    animation-name: dealercard-first;
+    animation-duration: 0.5s;
+}
+
+.d1 {
+    animation-name: dealercard-second;
+    animation-duration: 1.5s;
+}
+
+.not-first {
+    margin-left: -100px;
+}
+
+@keyframes dealcard-first {
+    0%          { opacity: 0; transform: translate(800px, -550px); }
+    30%         { opacity: 0; transform: translate(800px, -550px); }
+    31%         { opacity: 1; }
+    100%        { transform: translate(0px, 0px); }
+}
+
+@keyframes dealcard-second {
+    0%          { opacity: 0; transform: translate(800px, -550px); }
+    40%         { opacity: 0; transform: translate(800px, -550px); }
+    41%         { opacity: 1; }
+    100%        { transform: translate(0px, 0px); }
+}
+
+@keyframes dealercard-first {
+    0%          { transform: translateX(800px); }
+    100%        { transform: translateX(0px); }
+}
+
+@keyframes dealercard-second {
+    0%          { opacity: 0; transform: translateX(800px); }
+    30%         { opacity: 0; transform: translateX(800px); }
+    31%         { opacity: 1; }
+    100%        { transform: translateX(0px); }
+}
+
+
+
+.card-value {
+    font-size: 3.0em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.ch { background: url("../images/playingCardBacks.png") 0 0; }
+
+.cas { background-position: 0 -570px; }
+.cks { background-position: 0 -190px; }
+.cqs { background-position: 0 0; }
+.cjs { background-position: 0 -380px; }
+.c10s { background-position: 0 -760px; }
+.c9s { background-position: 0 -950px; }
+.c8s { background-position: 0 -1140px; }
+.c7s { background-position: 0 -1330px; }
+.c6s { background-position: 0 -1520px; }
+.c5s { background-position: 0 -1710px; }
+.c4s { background-position: -140px 0; }
+.c3s { background-position: -140px -190px; }
+.c2s { background-position: -140px -380px; }
+
+.cac { background-position: -560px -570px; }
+.ckc { background-position: -560px -190px; }
+.cqc { background-position: -560px 0; }
+.cjc { background-position: -560px -380px; }
+.c10c { background-position: -560px -760px; }
+.c9c { background-position: -560px -950px; }
+.c8c { background-position: -560px -1140px; }
+.c7c { background-position: -560px -1330px; }
+.c6c { background-position: -560px -1520px; }
+.c5c { background-position: -560px -1710px; }
+.c4c { background-position: -700px 0; }
+.c3c { background-position: -700px -190px; }
+.c2c { background-position: -280px -1140px; }
+
+.cah { background-position: -140px -1330px; }
+.ckh { background-position: -140px -950px; }
+.cqh { background-position: -140px -760px; }
+.cjh { background-position: -140px -1140px; }
+.c10h { background-position: -140px -1520px; }
+.c9h { background-position: -140px -1710px; }
+.c8h { background-position: -280px 0; }
+.c7h { background-position: -280px -190px; }
+.c6h { background-position: -280px -380px; }
+.c5h { background-position: -280px -570px; }
+.c4h { background-position: -280px -760px; }
+.c3h { background-position: -280px -950px; }
+.c2h { background-position: -700px -380px; }
+
+.cad { background-position: -420px 0; }
+.ckd { background-position: -280px -1520px; }
+.cqd { background-position: -280px -1330px; }
+.cjd { background-position: -280px -1710px; }
+.c10d { background-position: -420px -190px; }
+.c9d { background-position: -420px -380px; }
+.c8d { background-position: -420px -570px; }
+.c7d { background-position: -420px -760px; }
+.c6d { background-position: -420px -950px; }
+.c5d { background-position: -420px -1140px; }
+.c4d { background-position: -420px -1330px; }
+.c3d { background-position: -420px -1520px; }
+.c2d { background-position: -420px -1710px; }
+
+
+@media only screen and (max-width: 600px) {
+    .card-table h3 {
+        font-size: 2.0em;
+    }
+
+    .card-table h6 {
+        font-size: 1.0em;
+    }
+
+    .card-value {
+        font-size: 2.0em;
+    }
+    
+    .table-rules {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .card-holder {
+        height: 120px;
+        padding: 10px;
+    }
+    
+    .hand-result {
+        height: 45px;
+        padding: 10px 0px 1px 0px;
+    }
+
+    .hand-result h4 {
+        font-size: 2.0em;
+    }
+    
+    .table-action-bar {
+        width: 100%;
+        padding: 20px 3px 20px 3px;
+        font-size: 1.4em;
+    }
+
+    .action-divider {
+        float: left;
+        width: 33.3%;
+    }
+    
+    .card {
+        zoom: 0.4;
+        transform: scale(0.4);
+        transform-origin: 0 0;
+    }
+}
+

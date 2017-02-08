@@ -1,0 +1,142 @@
+
+/*============================================================*\
+
+    #Imports
+
+\*============================================================*/
+
+/* Variables for the project */
+@import (less) "_variables.less";
+
+/* Coins */
+@import (less) "_coins.less";
+
+/* Cards */
+@import (less) "_cards.less";
+
+
+/*============================================================*\
+
+    #Blackjack table buttons
+
+\*============================================================*/
+
+.button {    
+    box-shadow: 1px 1px 5px #121212;
+}
+
+.small-button {
+    padding: 5px 10px 5px 10px;
+    zoom: 0.8;
+    transform: scale(0.8);
+    transform-origin: 0 0;
+}
+
+.button-spacer {
+    padding: 6px 0px 0px 0px;
+}
+
+.icon:before {
+    content: " ";
+    background: url("../images/gamesprites.png");
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    float: left;
+}
+
+.money-font {
+    float: left;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #FFFFFF;
+    padding: 3px 0px 0px 0px;
+}
+
+.button-bet:before {
+    right: 5px;
+    background-position: 0 0;
+}
+
+.button-money:before {
+    right: 5px;
+    background-position: -32px 0;
+}
+
+.button-bets:before {
+    background-position: 0 0;
+}
+
+.button-plus:before {
+    background-position: -192px 0;
+}
+
+.button-minus:before {
+    background-position: -224px 0;
+}
+
+.button-deal:before {
+    background-position: -64px 0;
+}
+
+.button-hit:before {
+    background-position: -96px 0;
+}
+
+.button-stand:before {
+    background-position: -128px 0;
+}
+
+.button-surrender:before {
+    background-position: -160px 0;
+}
+
+.clear-bet:before {
+    background-position: -288px 0;
+    left: 10px;
+}
+
+.disabled-bet:before {
+    background-position: -288px -32px;
+    left: 10px;
+}
+
+
+/*============================================================*\
+
+    #Media Queries
+
+\*============================================================*/
+
+@media only screen and (max-width: 600px) {    
+    
+    .button-money:before, .button-bet:before {
+        zoom: 0.8;
+        transform:scale(0.8);
+        transform-origin: 0 0;
+    }
+    
+    .button-plus:before, .button-minus:before, .button-deal:before, .button-hit:before, .button-stand:before, .button-surrender:before {
+        zoom: 0.8;
+        transform:scale(0.8);
+        transform-origin: 0 0;
+    }
+    
+    .clear-bet:before {
+        padding: 10px 0px 0px 5px;
+        
+        zoom: 0.8;
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+
+    .disabled-bet:before {
+        padding: 10px 0px 0px 5px;
+        
+        zoom: 0.8;
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+}
+

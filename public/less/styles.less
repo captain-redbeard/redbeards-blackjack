@@ -1,0 +1,139 @@
+
+/*============================================================*\
+
+    #Imports
+
+\*============================================================*/
+
+/* Variables for the project */
+@import (less) "_variables.less";
+
+/* Fonts for the project */
+@import (less) "_fonts.less";
+
+/* Buttons */
+@import (less) "_buttons.less";
+
+
+/*============================================================*\
+
+    #Resets
+
+\*============================================================*/
+
+*,*:before,*:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+html,body { margin: 0; padding: 0; line-height: 1; width: 100%; position: relative; }
+
+body {
+	font-family: @custom-font;
+	font-size: 62.5%; /* Resets base font size to 10px, so setting font size to 14px in EMs is simple: 1.4em */
+	overflow-x: hidden;
+	background-color: #FFFFFF;
+}
+
+p {
+	color: @primary-text-color;
+	font-size: @font-size-copy;
+	line-height: @line-height-copy;
+	margin: 0 0 @font-size-copy;
+}
+
+li p { font-size: 1em; }
+
+a {
+	color: @heading-secondary;
+	position: relative;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 { color: @primary-text-color; margin: 0 0 .5em; clear: left; }
+
+* + h1,
+* + .h1,
+* + h2,
+* + .h2,
+* + h3,
+* + .h3,
+* + h4,
+* + .h4,
+* + h5,
+* + .h5,
+* + h6,
+* + .h6 { margin-top: 1em; }
+
+h1, .h1 { font-size: 4.8em; color: @heading-primary;}
+h2, .h2 { font-size: 3.6em; color: @heading-primary;}
+h3, .h3 { font-size: 3.2em; color: @heading-primary; text-align: center; padding-top: 10px;}
+h4, .h4 { font-size: 2.8em; color: @heading-secondary;}
+h5, .h5 { font-size: 2.0em; color: @heading-secondary;}
+h6, .h6 { font-size: 1.6em; color: @heading-secondary;}
+h7, .h7 { font-size: 1.6em; color: @heading-secondary; font-weight: bold; padding: 0px 0px 10px 0px;}
+
+/*============================================================*\
+
+    #Content
+
+\*============================================================*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+}
+
+/*============================================================*\
+
+    #Utility Classes
+
+\*============================================================*/
+
+.fl { float: left; }
+.fr { float: right; }
+.fc { float: none; margin-left: auto; margin-right: auto; }
+.fn { float: none; }
+
+.tl { text-align: left; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cn { clear: none; }
+
+.w49 { width: 49%; }
+.w100 { width: 100%; }
+
+.bold { font-weight: bold; }
+
+.small-font { font-size: 0.5em; }
+
+.hidden {
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 0px;
+    margin-left: -9999px;
+}
+
+.centre {
+    text-align: center;
+}
+
+/*============================================================*\
+
+    #Media Queries
+
+\*============================================================*/
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}

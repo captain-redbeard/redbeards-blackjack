@@ -1,0 +1,94 @@
+/*============================================================*\
+
+    #Coins
+
+\*============================================================*/
+
+.raw-coin {
+    width: 65px;
+    height: 65px;
+    border: 10px dotted #F0F0F0;
+    background: transparent none;
+    display: inline-block;
+    border-radius: 65px;
+    tap-highlight-color: transparent;
+    box-shadow: 1px 1px 5px #121212;
+}
+
+a.raw-coin, a:visited.raw-coin {
+    padding: 0px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.coin-font {
+    font-size: 1.4em;
+}
+
+.white-coin {
+    color: #FFFFFF;
+    background-color: @flat-white;
+}
+
+.white-coin:hover, .white-coin:focus {
+    background-color: @flat-white-hover;
+}
+
+.red-coin {
+    color: #FFFFFF;
+    background-color: @flat-red;
+}
+
+.red-coin:hover, .red-coin:focus {
+    background-color: @flat-red-hover;
+}
+
+.green-coin {
+    color: #FFFFFF;
+    background-color: @flat-green;
+}
+
+.green-coin:hover, .green-coin:focus {
+    background-color: @flat-green-hover;
+}
+
+.black-coin {
+    color: #FFFFFF;
+    background-color: @flat-black;
+}
+
+.black-coin:hover, .black-coin:focus {
+    background-color: @flat-black-hover;
+}
+
+.disabled-coin {
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #bbbbbb;
+}
+
+
+/*============================================================*\
+
+    #Media
+
+\*============================================================*/
+
+@media only screen and (max-width: 600px) {
+    .raw-coin {
+        width: 40px;
+        height: 40px;
+        border: 4px dotted #F0F0F0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 40px;
+    }
+    
+    a.raw-coin, a:visited.raw-coin {
+        line-height: 33px;
+    }
+    
+    .coin-font {
+        font-size: 1.0em;
+    }
+}
