@@ -3,16 +3,16 @@
  * @author captain-redbeard
  * @since 14/01/17
  */
-namespace Redbeard\Controllers;
+namespace Blackjack\Controllers;
 
-use Redbeard\Models\GameManager;
+use Redbeard\Crew\Controller;
 
 class Simulate extends Controller
 {
     public function index()
     {
         //Create new game manager
-        $gm = new GameManager();
+        $gm = $this->model('GameManager');
         $gm->init(8, true);
         $gm->coins = 1000000;
         $gm->increaseBet(1);

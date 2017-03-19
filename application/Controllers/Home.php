@@ -3,9 +3,9 @@
  * @author captain-redbeard
  * @since 14/01/17
  */
-namespace Redbeard\Controllers;
+namespace Blackjack\Controllers;
 
-use Redbeard\Models\GameManager;
+use Redbeard\Crew\Controller;
 
 class Home extends Controller
 {
@@ -20,7 +20,7 @@ class Home extends Controller
         //New game
         if (!isset($_SESSION['gm'])) {
             $deckstouse = 8;
-            $gm = new GameManager();
+            $gm = $this->model('GameManager');
             $gm->init($deckstouse, false);
             $_SESSION['gm'] = $gm;
         } elseif ($_SESSION['gm']->gameover && $_SESSION['gm']->deckmanager->getCardsLeft() < 52) {

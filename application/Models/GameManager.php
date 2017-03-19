@@ -3,9 +3,9 @@
  * @author captain-redbeard
  * @since 20/02/16
  */
-namespace Redbeard\Models;
+namespace Blackjack\Models;
 
-use Redbeard\Models\DeckManager;
+use Blackjack\Models\DeckManager;
 
 class GameManager
 {

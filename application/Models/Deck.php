@@ -3,7 +3,7 @@
  * @author captain-redbeard
  * @since 20/02/16
  */
-namespace Redbeard\Models;
+namespace Blackjack\Models;
 
 class Deck
 {
